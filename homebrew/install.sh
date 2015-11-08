@@ -23,7 +23,7 @@ elif
 fi
 
 # Install homebrew packages
-brew install python mysql git git-flow caskroom/cask/brew-cask
+brew install python mysql git git-flow
 
 # Remove outdated versions from the cellar.
 brew cleanup
