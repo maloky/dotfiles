@@ -14,9 +14,18 @@ then
   if test "$(uname)" = "Darwin"
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+elif
+  # Make sure we’re using the latest Homebrew.
+  brew update
+
+  # Upgrade any already-installed formulae.
+  brew upgrade --all
 fi
 
 # Install homebrew packages
-brew install python mysql git git-flow brew-cask
+brew install python mysql git git-flow caskroom/cask/brew-cask
+
+# Remove outdated versions from the cellar.
+brew cleanup
 
 exit 0
