@@ -11,3 +11,6 @@ brew cask install the-unarchiver
 brew cask install transmission
 brew cask install vlc
 brew cask install transmit
+brew cask install sublime-text
+brew cask install sourcetree
+brew cask install spotifree
