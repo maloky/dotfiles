@@ -10,3 +10,5 @@ unset file;
 source ~/.dotfiles/iterm2/helpers.sh
 source /usr/local/bin/virtualenvwrapper.sh
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
